@@ -31,6 +31,7 @@
 <script>
 	export default{
 		props: ['product', 'active'],
+		emits: ['close-product-drawer'],
 		methods: {
 			addToCart() {
 				this.$store.commit('addToCart',this.product)
